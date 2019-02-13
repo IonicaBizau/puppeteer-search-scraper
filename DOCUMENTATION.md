@@ -2,6 +2,30 @@
 
 You can see below the API reference of this module.
 
+### `register(c)`
+
+#### Params
+
+- **Object** `c`: The SearchScraper options along with the `name` of the scraper.
+
+#### Return
+- **SearchScraper** The instance of the scraper.
+
+### `getScraper(name)`
+
+#### Params
+
+- **String** `name`: The name of the scraper
+
+#### Return
+- **SearchScraper** The instance of the scraper.
+
+### `configure(conf)`
+
+#### Params
+
+- **Array** `conf`: An array containing:
+
 ### `puppeteerGoogleScraper(term, options)`
 Scrape Google using Puppeteer
 

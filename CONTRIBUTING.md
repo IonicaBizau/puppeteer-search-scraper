@@ -61,6 +61,6 @@ Thanks! :sweat_smile:
 
 
 
-[1]: https://github.com/IonicaBizau/puppeteer-google-scraper/issues
+[1]: https://github.com/IonicaBizau/puppeteer-search-scraper/issues
 
 [2]: https://github.com/IonicaBizau/code-style

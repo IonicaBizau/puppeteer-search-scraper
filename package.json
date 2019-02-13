@@ -1,9 +1,9 @@
 {
-  "name": "puppeteer-google-scraper",
-  "description": "Scrape Google using Puppeteer",
+  "name": "puppeteer-search-scraper",
+  "description": "Scrape Search Engines using Puppeteer",
   "keywords": [
     "puppeteer",
-    "google",
+    "search",
     "scraper",
     "scrape",
     "using"
@@ -15,7 +15,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
-  "homepage": "https://github.com/IonicaBizau/puppeteer-google-scraper#readme",
+  "homepage": "https://github.com/IonicaBizau/puppeteer-search-scraper#readme",
   "files": [
     "bin/",
     "app/",
@@ -32,10 +32,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/IonicaBizau/puppeteer-google-scraper.git"
+    "url": "git+ssh://git@github.com/IonicaBizau/puppeteer-search-scraper.git"
   },
   "bugs": {
-    "url": "https://github.com/IonicaBizau/puppeteer-google-scraper/issues"
+    "url": "https://github.com/IonicaBizau/puppeteer-search-scraper/issues"
   },
   "dependencies": {
     "puppeteer": "^1.9.0"

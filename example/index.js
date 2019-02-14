@@ -2,7 +2,7 @@
 
 const SearchScraper = require("../lib");
 
-const headless = false
+const headless = true
 SearchScraper.configure([
     {
         name: "GoogleCom"

@@ -77,6 +77,7 @@ SearchScraper.search(QUERY, { engine: "GoogleCom" }).then(res => {
     return SearchScraper.search(QUERY, { engine: "GoogleCoAu" })
 }).then(res => {
     console.log(res)
+//Promise.resolve().then(() => {
     console.log(">>>> Bing.com")
     return SearchScraper.search(QUERY, { engine: "Bing" })
 }).then(res => {

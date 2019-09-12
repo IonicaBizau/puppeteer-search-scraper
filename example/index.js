@@ -6,15 +6,16 @@ const headless = false
 SearchScraper.configure([
     {
         name: "GoogleCom"
-      , debugDir: "public/GoogleCom"
+      , debugDir: __dirname + "/public/GoogleCom"
       , searchUrl: "http://google.com/webhp?num=100"
       , limit: 100
-      , selectors: SearchScraper.Selectors.GOOGLE
+      , selectors: SearchScraper.Selectors.GOOGLE_MOBILE
       , headless
+      , device: "iPhone X"
     }
   , {
         name: "GoogleCoUk"
-      , debugDir: "public/GoogleCoUk"
+      , debugDir: __dirname + "/public/GoogleCoUk"
       , searchUrl: "http://google.co.uk/webhp?num=100"
       , limit: 100
       , selectors: SearchScraper.Selectors.GOOGLE
@@ -22,7 +23,7 @@ SearchScraper.configure([
     }
   , {
         name: "GoogleCoAu"
-      , debugDir: "public/GoogleComAu"
+      , debugDir: __dirname + "/public/GoogleComAu"
       , searchUrl: "http://google.com.au/webhp?num=100"
       , limit: 100
       , selectors: SearchScraper.Selectors.GOOGLE
@@ -30,7 +31,7 @@ SearchScraper.configure([
     }
   , {
         name: "Bing"
-      , debugDir: "public/Bing"
+      , debugDir: __dirname + "/public/Bing"
       , searchUrl: "http://bing.com/"
       , limit: 100
       , selectors: SearchScraper.Selectors.BING
@@ -54,7 +55,6 @@ SearchScraper.search(QUERY, { engine: "GoogleCom" }).then(res => {
     return SearchScraper.search(QUERY, { engine: "GoogleCoAu" })
 }).then(res => {
     console.log(res)
-//Promise.resolve().then(() => {
     console.log(">>>> Bing.com")
     return SearchScraper.search(QUERY, { engine: "Bing" })
 }).then(res => {

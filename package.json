@@ -9,7 +9,7 @@
     "using"
   ],
   "license": "MIT",
-  "version": "3.4.3",
+  "version": "3.4.4",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

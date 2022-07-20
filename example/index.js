@@ -39,26 +39,18 @@ SearchScraper.configure([
     }
 ])
 
-const QUERY = "who killed kennedy"
-console.log(">>>> Google.com")
-SearchScraper.search(QUERY, { engine: "GoogleCom" }).then(res => {
-    console.log(res)
-    console.log(">>>> Google.com")
-    return SearchScraper.search(QUERY, { engine: "GoogleCom" })
-}).then(res => {
-    console.log(res)
-    console.log(">>>> Google.co.uk")
-    return SearchScraper.search(QUERY, { engine: "GoogleCoUk" })
-}).then(res => {
-    console.log(res)
-    console.log(">>>> Google.com.au")
-    return SearchScraper.search(QUERY, { engine: "GoogleCoAu" })
-}).then(res => {
-    console.log(res)
-    console.log(">>>> Bing.com")
-    return SearchScraper.search(QUERY, { engine: "Bing" })
-}).then(res => {
-    console.log(res)
-}).catch(err => {
-    console.error(err)
-})
+const QUERY = "who killed kennedy";
+
+(async () => {
+	console.log(">>>> Google.com")
+	console.log(await SearchScraper.search(QUERY, { engine: "GoogleCom" }))
+    
+	console.log(">>>> Google.co.uk")
+	console.log(await SearchScraper.search(QUERY, { engine: "GoogleCoUk" }))
+
+	console.log(">>>> Google.com.au")
+  	console.log(await SearchScraper.search(QUERY, { engine: "GoogleCoAu" }))
+
+	console.log(">>>> Bing.com")
+  	console.log(await SearchScraper.search(QUERY, { engine: "Bing" }))
+})()

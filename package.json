@@ -38,6 +38,6 @@
     "url": "https://github.com/IonicaBizau/puppeteer-search-scraper/issues"
   },
   "dependencies": {
-    "puppeteer": "^8.0.0"
+    "puppeteer": "^18.0.5"
   }
 }

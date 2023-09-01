@@ -33,7 +33,7 @@ SearchScraper.configure([
         name: "Bing"
       , debugDir: __dirname + "/public/Bing"
       , searchUrl: "http://bing.com/"
-      , limit: 100
+      , limit: 30
       , selectors: SearchScraper.Selectors.BING
       , headless
     }
@@ -42,14 +42,14 @@ SearchScraper.configure([
 const QUERY = "who killed kennedy";
 
 (async () => {
-	console.log(">>>> Google.com")
-	console.log(await SearchScraper.search(QUERY, { engine: "GoogleCom" }))
+	//console.log(">>>> Google.com")
+	//console.log(await SearchScraper.search(QUERY, { engine: "GoogleCom" }))
 
-	console.log(">>>> Google.co.uk")
-	console.log(await SearchScraper.search(QUERY, { engine: "GoogleCoUk" }))
+	//console.log(">>>> Google.co.uk")
+	//console.log(await SearchScraper.search(QUERY, { engine: "GoogleCoUk" }))
 
-	console.log(">>>> Google.com.au")
-  	console.log(await SearchScraper.search(QUERY, { engine: "GoogleCoAu" }))
+	//console.log(">>>> Google.com.au")
+  	//console.log(await SearchScraper.search(QUERY, { engine: "GoogleCoAu" }))
 
 	console.log(">>>> Bing.com")
   	console.log(await SearchScraper.search(QUERY, { engine: "Bing" }))

@@ -45,12 +45,12 @@ const QUERY = "who killed kennedy";
 	console.log(">>>> Google.com")
 	console.log(await SearchScraper.search(QUERY, { engine: "GoogleCom" }))
 
-	//console.log(">>>> Google.co.uk")
-	//console.log(await SearchScraper.search(QUERY, { engine: "GoogleCoUk" }))
+	console.log(">>>> Google.co.uk")
+	console.log(await SearchScraper.search(QUERY, { engine: "GoogleCoUk" }))
 
-	//console.log(">>>> Google.com.au")
-  	//console.log(await SearchScraper.search(QUERY, { engine: "GoogleCoAu" }))
+	console.log(">>>> Google.com.au")
+  	console.log(await SearchScraper.search(QUERY, { engine: "GoogleCoAu" }))
 
-	//console.log(">>>> Bing.com")
-  	//console.log(await SearchScraper.search(QUERY, { engine: "Bing" }))
+	console.log(">>>> Bing.com")
+  	console.log(await SearchScraper.search(QUERY, { engine: "Bing" }))
 })()

@@ -2,12 +2,12 @@
 
 const SearchScraper = require("../lib");
 
-const headless = false
+const headless = true
 SearchScraper.configure([
     {
         name: "GoogleCom"
       , debugDir: __dirname + "/public/GoogleCom"
-      , searchUrl: "http://google.com/webhp?num=100"
+      , searchUrl: "http://google.com/webhp?num=100&hl=en"
       , limit: 100
       , selectors: SearchScraper.Selectors.GOOGLE_MOBILE
       , headless
@@ -16,7 +16,7 @@ SearchScraper.configure([
   , {
         name: "GoogleCoUk"
       , debugDir: __dirname + "/public/GoogleCoUk"
-      , searchUrl: "http://google.co.uk/webhp?num=100"
+      , searchUrl: "http://google.co.uk/webhp?num=100&hl=en"
       , limit: 100
       , selectors: SearchScraper.Selectors.GOOGLE
       , headless
@@ -24,7 +24,7 @@ SearchScraper.configure([
   , {
         name: "GoogleCoAu"
       , debugDir: __dirname + "/public/GoogleComAu"
-      , searchUrl: "http://google.com.au/webhp?num=100"
+      , searchUrl: "http://google.com.au/webhp?num=100&hl=en"
       , limit: 100
       , selectors: SearchScraper.Selectors.GOOGLE
       , headless
@@ -42,8 +42,8 @@ SearchScraper.configure([
 const QUERY = "who killed kennedy";
 
 (async () => {
-	//console.log(">>>> Google.com")
-	//console.log(await SearchScraper.search(QUERY, { engine: "GoogleCom" }))
+	console.log(">>>> Google.com")
+	console.log(await SearchScraper.search(QUERY, { engine: "GoogleCom" }))
 
 	//console.log(">>>> Google.co.uk")
 	//console.log(await SearchScraper.search(QUERY, { engine: "GoogleCoUk" }))
@@ -51,6 +51,6 @@ const QUERY = "who killed kennedy";
 	//console.log(">>>> Google.com.au")
   	//console.log(await SearchScraper.search(QUERY, { engine: "GoogleCoAu" }))
 
-	console.log(">>>> Bing.com")
-  	console.log(await SearchScraper.search(QUERY, { engine: "Bing" }))
+	//console.log(">>>> Bing.com")
+  	//console.log(await SearchScraper.search(QUERY, { engine: "Bing" }))
 })()

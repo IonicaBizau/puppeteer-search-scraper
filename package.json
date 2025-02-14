@@ -9,7 +9,7 @@
     "using"
   ],
   "license": "MIT",
-  "version": "4.2.0",
+  "version": "4.2.1",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,8 +27,11 @@
     "menu/",
     "cli.js",
     "index.js",
+    "index.d.ts",
+    "package-lock.json",
     "bloggify.js",
-    "bloggify.json"
+    "bloggify.json",
+    "bloggify/"
   ],
   "repository": {
     "type": "git",
